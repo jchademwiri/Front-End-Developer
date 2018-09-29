@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <form action="index.html" method="POST">
+        <h1>Sign Up</h1>
+        <fieldset>
+
+            <legend><span class="number">1</span>Your basic info</legend>
+
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="user_name">
+            <label for="mail">Email:</label>
+            <input type="email" id="mail" name="user_email">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="user_password">
+
+            <label>Age:</label>
+            <input type="radio" id="under_13" name="user_age"><label for="under_13" class="light">Under 13</label>
+            <br>
+            <input type="radio" id="over_13" name="user_age"><label for="over_13" class="light">13 or over</label>
+
+            <!-- <div class="radio">
+                <label>
+                    <input type="radio" name="" id="input" value="" checked="checked">
+                    Radio Box
+                </label>
+            </div> -->
+
+        </fieldset>
+        <fieldset>
+
+            <legend><span class="number">2</span>Your profile</legend>
+
+            <!-- <textarea id="user_bio"></textarea> -->
+            <label for="bio">Biography:</label>
+            <textarea name="user_bio" id="bio" cols="30" rows="10"></textarea>
+
+            <label for="job">Job role:</label>
+            <select id="job" name="user_job">
+                <optgroup label="Web">
+                    <option value="front_end">Front End Developer</option>
+                    <option value="python">python Developer</option>
+                </optgroup>
+                <option value=""></option>
+                <optgroup label="Mobile">
+                    <option value="android">adroid Developer</option>
+                    <option value="swift">swift Developer</option>
+                    <option value="word_press">word press Developer</option>
+                </optgroup>
+
+            </select>
+
+            <label>Intrest:</label>
+            <input type="checkbox" id="development" value="intrest_development" name="user_intrerest">Development<label for="development" class="light"></label><br>
+            <input type="checkbox" id="design" value="intrest_design" name="user_intrerest"><label for="design" class="light">Design</label><br>
+            <input type="checkbox" id="business" value="intrest_business" name="user_intrerest">Business<label for="business" class="light"></label>
+
+        </fieldset>
+        <button type="submit">Sign Up</button>
+    </form>
+
+</body>
+
+</html>
