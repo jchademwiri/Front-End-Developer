@@ -16,3 +16,4 @@ while (counter < 10 ) {
     document.write(random + '')
     counter += 1 ;
 }
+
