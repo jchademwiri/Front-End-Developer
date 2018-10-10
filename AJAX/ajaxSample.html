@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AJAX</title>
+</head>
+
+<body>
+    <script>
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                document.getElementById('sidebar').innerHTML = xhr.responseText;
+            };
+        };
+        xhr.open('GET', 'sidebar.html');
+        xhr.send();
+        //In this challenge, you'll create a JSON file containing a string that's formatted as an array of JavaScript objects. The file will 
+        //contain an array of songs, each with a song title and artist. Start by creating an empty array.
+        [{ "title": "a title", "artist": "an artist" }, { "title": "an other title", "artist": "an other artist" }]
+
+    </script>
+</body>
+
+</html>
